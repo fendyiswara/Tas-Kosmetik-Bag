@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tas Cosmetic Bag Premium - Limited Offer</title>
+    <title>Tas Cosmetic Bag Premium | Multifungsi & Elegan</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -12,44 +12,51 @@
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #f8fafc;
+            color: #1e293b;
         }
         
-        .premium-bg {
+        .premium-gradient {
             background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
         }
         
         .promo-badge {
             position: absolute;
-            top: 10px;
-            right: 10px;
+            top: -10px;
+            right: -10px;
             background: #ef4444;
             color: white;
-            padding: 5px 10px;
-            border-radius: 20px;
-            font-size: 12px;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-weight: bold;
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         
         .testimonial-card {
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
         }
         
         .testimonial-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
         
         .countdown-box {
-            background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
-            border-radius: 10px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(5px);
+            border-radius: 8px;
+        }
+        
+        .product-feature {
+            transition: all 0.3s ease;
+        }
+        
+        .product-feature:hover {
+            transform: scale(1.05);
         }
         
         .color-variant {
@@ -64,146 +71,150 @@
         
         .color-variant.active {
             border-color: #3b82f6;
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         
-        .feature-icon {
-            width: 50px;
-            height: 50px;
-            background-color: #3b82f6;
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 10px;
+        .price-strike {
+            position: relative;
+        }
+        
+        .price-strike::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            height: 2px;
+            background: #ef4444;
+            transform: translateY(-50%);
+        }
+        
+        @media (max-width: 640px) {
+            .promo-badge {
+                width: 30px;
+                height: 30px;
+                font-size: 12px;
+            }
         }
     </style>
 </head>
-<body class="text-gray-800">
+<body>
     <!-- Header -->
-    <header class="premium-bg text-white py-4">
+    <header class="premium-gradient text-white py-4">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center">
-                <div class="text-2xl font-bold">LUXEBAG</div>
-                <div class="hidden md:flex space-x-6">
-                    <!-- Navigation links removed -->
-                </div>
-                <div class="md:hidden">
-                    <!-- Mobile menu button removed -->
-                </div>
+                <div class="text-2xl font-bold">COSMETIC BAG</div>
+                <button class="md:hidden text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="container mx-auto px-4 py-8">
-        <!-- Hero Image -->
-        <section class="mb-12">
-            <div class="relative rounded-xl overflow-hidden shadow-xl">
-                <img src="https://down-id.img.susercontent.com/file/sg-11134201-22110-aza1qugzv0jv70.webp" alt="Tas Cosmetic Bag Premium" class="w-full h-auto">
-                <div class="promo-badge">LIMITED STOCK!</div>
-            </div>
-        </section>
+    <!-- Hero Image -->
+    <section class="bg-white py-8">
+        <div class="container mx-auto px-4">
+            <img src="https://down-id.img.susercontent.com/file/sg-11134201-22110-aza1qugzv0jv70.webp" alt="Tas Cosmetic Bag Premium" class="w-full h-auto rounded-lg shadow-xl">
+        </div>
+    </section>
 
-        <!-- Product Title & Description -->
-        <section class="mb-12 text-center">
-            <h1 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Tas Cosmetic Bag Premium</h1>
-            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                Tas kosmetik multifungsi dengan desain praktis dan elegan. Dilengkapi banyak kompartemen untuk menyimpan makeup, skincare, dan perlengkapan kecantikan lainnya. Cocok dibawa traveling, hangout, atau disimpan di rumah agar semua perlengkapan tertata rapi. Terbuat dari bahan tahan air dan mudah dibersihkan!
-            </p>
-        </section>
-
-        <!-- Product Features -->
-        <section class="mb-16">
-            <h2 class="text-2xl font-bold text-center mb-8 text-blue-900">Keunggulan Produk Kami</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-                <div class="text-center p-4">
-                    <div class="feature-icon mx-auto">
-                        <i class="fas fa-layer-group text-xl"></i>
-                    </div>
-                    <h3 class="font-semibold mb-2">Banyak Slot & Sekat</h3>
+    <!-- Product Title & Description -->
+    <section class="bg-white py-8">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Tas Cosmetic Bag Premium</h1>
+            <p class="text-gray-600 text-lg mb-6">Tas kosmetik multifungsi dengan desain praktis dan elegan. Dilengkapi banyak kompartemen untuk menyimpan makeup, skincare, dan perlengkapan kecantikan lainnya. Cocok dibawa traveling, hangout, atau disimpan di rumah agar semua perlengkapan tertata rapi. Terbuat dari bahan tahan air dan mudah dibersihkan!</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+                <div class="product-feature bg-blue-50 p-6 rounded-lg text-center">
+                    <div class="text-blue-600 text-3xl mb-3"><i class="fas fa-layer-group"></i></div>
+                    <h3 class="font-bold text-lg mb-2">Banyak Slot & Sekat</h3>
                     <p class="text-gray-600">Makeup lebih tertata rapi dengan banyak kompartemen</p>
                 </div>
-                <div class="text-center p-4">
-                    <div class="feature-icon mx-auto">
-                        <i class="fas fa-box-open text-xl"></i>
-                    </div>
-                    <h3 class="font-semibold mb-2">Desain Compact</h3>
-                    <p class="text-gray-600">Ukuran pas namun bisa memuat banyak barang</p>
+                
+                <div class="product-feature bg-blue-50 p-6 rounded-lg text-center">
+                    <div class="text-blue-600 text-3xl mb-3"><i class="fas fa-suitcase"></i></div>
+                    <h3 class="font-bold text-lg mb-2">Desain Compact</h3>
+                    <p class="text-gray-600">Ukuran praktis namun muat banyak perlengkapan</p>
                 </div>
-                <div class="text-center p-4">
-                    <div class="feature-icon mx-auto">
-                        <i class="fas fa-umbrella-beach text-xl"></i>
-                    </div>
-                    <h3 class="font-semibold mb-2">Waterproof</h3>
-                    <p class="text-gray-600">Bahan tahan air dan anti noda</p>
+                
+                <div class="product-feature bg-blue-50 p-6 rounded-lg text-center">
+                    <div class="text-blue-600 text-3xl mb-3"><i class="fas fa-umbrella"></i></div>
+                    <h3 class="font-bold text-lg mb-2">Waterproof</h3>
+                    <p class="text-gray-600">Bahan tahan air dan anti noda, mudah dibersihkan</p>
                 </div>
-                <div class="text-center p-4">
-                    <div class="feature-icon mx-auto">
-                        <i class="fas fa-suitcase-rolling text-xl"></i>
-                    </div>
-                    <h3 class="font-semibold mb-2">Ringan</h3>
-                    <p class="text-gray-600">Mudah dibawa saat traveling</p>
-                </div>
-                <div class="text-center p-4">
-                    <div class="feature-icon mx-auto">
-                        <i class="fas fa-palette text-xl"></i>
-                    </div>
-                    <h3 class="font-semibold mb-2">Multifungsi</h3>
-                    <p class="text-gray-600">Cocok untuk makeup artist atau pemakaian pribadi</p>
+                
+                <div class="product-feature bg-blue-50 p-6 rounded-lg text-center">
+                    <div class="text-blue-600 text-3xl mb-3"><i class="fas fa-plane"></i></div>
+                    <h3 class="font-bold text-lg mb-2">Travel Friendly</h3>
+                    <p class="text-gray-600">Ringan dan mudah dibawa saat traveling</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Product Details -->
-        <section class="mb-16">
-            <h2 class="text-2xl font-bold text-center mb-8 text-blue-900">Detail Produk</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="text-center">
-                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-22110-8o00ymgzv0jv79.webp" alt="Detail Tas 1" class="w-full h-auto rounded-lg shadow-md mb-4">
-                    <p class="text-gray-600">Desain kompartemen yang luas dan terorganisir</p>
+    <!-- Product Details -->
+    <section class="bg-gray-50 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Detail Produk</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-22110-8o00ymgzv0jv79.webp" alt="Detail Tas 1" class="w-full h-auto mb-4 rounded">
+                    <p class="text-gray-700">Desain interior dengan banyak kompartemen untuk menyimpan berbagai jenis makeup dan skincare</p>
                 </div>
-                <div class="text-center">
-                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-22110-3b76orgzv0jv20.webp" alt="Detail Tas 2" class="w-full h-auto rounded-lg shadow-md mb-4">
-                    <p class="text-gray-600">Material premium yang tahan lama</p>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-22110-3b76orgzv0jv20.webp" alt="Detail Tas 2" class="w-full h-auto mb-4 rounded">
+                    <p class="text-gray-700">Material premium yang tahan lama dan mudah dibersihkan dari noda</p>
                 </div>
-                <div class="text-center">
-                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-22110-0iy49rgzv0jv65.webp" alt="Detail Tas 3" class="w-full h-auto rounded-lg shadow-md mb-4">
-                    <p class="text-gray-600">Ukuran sempurna untuk traveling</p>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-22110-0iy49rgzv0jv65.webp" alt="Detail Tas 3" class="w-full h-auto mb-4 rounded">
+                    <p class="text-gray-700">Ukuran compact yang pas untuk dibawa traveling atau sehari-hari</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Color Variants -->
-        <section class="mb-16">
-            <h2 class="text-2xl font-bold text-center mb-8 text-blue-900">Pilihan Warna</h2>
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
-                <div class="color-variant rounded-lg overflow-hidden cursor-pointer active">
-                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-22110-jlhumg74v0jv98@resize_w450_nl.webp" alt="Warna 1" class="w-full h-auto">
+    <!-- Color Variants -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Pilihan Warna</h2>
+            <p class="text-center text-gray-600 mb-12">Pilih warna favorit Anda untuk menyesuaikan dengan gaya pribadi</p>
+            
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="color-variant w-24 h-24 rounded-lg overflow-hidden cursor-pointer active">
+                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-22110-jlhumg74v0jv98@resize_w450_nl.webp" alt="Warna 1" class="w-full h-full object-cover">
                 </div>
-                <div class="color-variant rounded-lg overflow-hidden cursor-pointer">
-                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-22110-xp8lagd5v0jvd8@resize_w450_nl.webp" alt="Warna 2" class="w-full h-auto">
+                
+                <div class="color-variant w-24 h-24 rounded-lg overflow-hidden cursor-pointer">
+                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-22110-xp8lagd5v0jvd8@resize_w450_nl.webp" alt="Warna 2" class="w-full h-full object-cover">
                 </div>
-                <div class="color-variant rounded-lg overflow-hidden cursor-pointer">
-                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98p-lyrbwqh5wsm3ab.webp" alt="Warna 3" class="w-full h-auto">
+                
+                <div class="color-variant w-24 h-24 rounded-lg overflow-hidden cursor-pointer">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98p-lyrbwqh5wsm3ab.webp" alt="Warna 3" class="w-full h-full object-cover">
                 </div>
-                <div class="color-variant rounded-lg overflow-hidden cursor-pointer">
-                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-22110-il6g1cu4v0jv9c.webp" alt="Warna 4" class="w-full h-auto">
+                
+                <div class="color-variant w-24 h-24 rounded-lg overflow-hidden cursor-pointer">
+                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-22110-il6g1cu4v0jv9c.webp" alt="Warna 4" class="w-full h-full object-cover">
                 </div>
-                <div class="color-variant rounded-lg overflow-hidden cursor-pointer">
-                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7qul7-lkafm00m2c9g42.webp" alt="Warna 5" class="w-full h-auto">
+                
+                <div class="color-variant w-24 h-24 rounded-lg overflow-hidden cursor-pointer">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7qul7-lkafm00m2c9g42.webp" alt="Warna 5" class="w-full h-full object-cover">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Testimonials -->
-        <section class="mb-16">
-            <h2 class="text-2xl font-bold text-center mb-8 text-blue-900">Apa Kata Pelanggan Kami?</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="testimonial-card bg-white p-6 rounded-xl">
+    <!-- Testimonials -->
+    <section class="bg-gray-50 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Apa Kata Pelanggan Kami</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-white p-6 rounded-lg">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold mr-4">A</div>
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 text-xl font-bold mr-4">A</div>
                         <div>
                             <h4 class="font-bold">Anita Wijaya</h4>
                             <div class="flex text-yellow-400">
@@ -215,13 +226,31 @@
                             </div>
                         </div>
                     </div>
-                    <p class="text-gray-600">"Tasnya sangat berkualitas! Bahan tebal dan waterproof beneran. Sekarang makeupku rapi banget, ga berantakan lagi. Worth it banget harganya!"</p>
+                    <p class="text-gray-600">"Tas ini benar-benar mengubah cara saya menyimpan makeup. Sekarang semua tertata rapi dan mudah dicari. Bahan juga sangat bagus, tidak mudah kotor."</p>
                 </div>
-                <div class="testimonial-card bg-white p-6 rounded-xl">
+                
+                <div class="testimonial-card bg-white p-6 rounded-lg">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold mr-4">B</div>
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 text-xl font-bold mr-4">B</div>
                         <div>
                             <h4 class="font-bold">Budi Santoso</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Saya beli ini untuk hadiah istri, dan dia sangat suka! Sekarang makeupnya tidak berantakan lagi. Kualitasnya premium sesuai harga."</p>
+                </div>
+                
+                <div class="testimonial-card bg-white p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 text-xl font-bold mr-4">D</div>
+                        <div>
+                            <h4 class="font-bold">Dewi Lestari</h4>
                             <div class="flex text-yellow-400">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -231,169 +260,219 @@
                             </div>
                         </div>
                     </div>
-                    <p class="text-gray-600">"Beli ini buat hadiah istri, dia sangat suka! Katanya sekarang lebih mudah cari makeup karena ada banyak kompartemen. Pengiriman juga cepat."</p>
+                    <p class="text-gray-600">"Sebagai makeup artist, tas ini sangat membantu pekerjaan saya. Banyak kompartemen untuk menyimpan berbagai alat makeup. Sangat recommended!"</p>
                 </div>
-                <div class="testimonial-card bg-white p-6 rounded-xl">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold mr-4">D</div>
-                        <div>
-                            <h4 class="font-bold">Dewi Lestari</h4>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Countdown -->
+    <section class="premium-gradient text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">PROMO SPESIAL HARI INI!</h2>
+            <p class="text-xl mb-8">Diskon akan berakhir dalam:</p>
+            
+            <div class="flex justify-center gap-4 mb-8">
+                <div class="countdown-box px-6 py-4">
+                    <div class="text-3xl font-bold" id="countdown-hours">12</div>
+                    <div class="text-sm">Jam</div>
+                </div>
+                <div class="countdown-box px-6 py-4">
+                    <div class="text-3xl font-bold" id="countdown-minutes">45</div>
+                    <div class="text-sm">Menit</div>
+                </div>
+                <div class="countdown-box px-6 py-4">
+                    <div class="text-3xl font-bold" id="countdown-seconds">30</div>
+                    <div class="text-sm">Detik</div>
+                </div>
+            </div>
+            
+            <p class="text-lg mb-8">Segera dapatkan diskon spesial sebelum promo berakhir!</p>
+        </div>
+    </section>
+
+    <!-- Order Notes -->
+    <section class="bg-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="bg-blue-50 p-6 rounded-lg">
+                <h3 class="font-bold text-lg mb-4 text-blue-800">Catatan Penting:</h3>
+                <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                    <li>Pengiriman 2 - 4 Hari Setelah Pemesanan</li>
+                    <li>Mohon Isi Alamat Dengan Lengkap</li>
+                    <li>100% Product Original</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price & Order Section -->
+    <section class="bg-gray-50 py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8">
+                        <div class="relative">
+                            <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98s-lw3rzc6p1ba378.webp" alt="Promo Diskon" class="w-full h-auto rounded-lg mb-6">
+                            <div class="promo-badge">-27%</div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <div class="text-sm text-gray-500 mb-1">Harga Normal:</div>
+                            <div class="price-strike text-xl text-gray-500">Rp 225.000</div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <div class="text-sm text-gray-500 mb-1">Harga Promo Hari Ini:</div>
+                            <div class="text-3xl font-bold text-blue-600">Rp 165.000</div>
+                            <div class="text-green-600 font-medium mt-1">Anda Hemat Rp 60.000!</div>
+                        </div>
+                        
+                        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
+                            <div class="flex">
+                                <div class="flex-shrink-0 text-yellow-500">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm text-yellow-700">
+                                        Promo hanya berlaku hari ini! Harga akan kembali normal besok.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <p class="text-gray-600">"Sebagai makeup artist, tas ini sangat membantu kerja saya. Bisa muat banyak produk dan mudah dibawa kemana-mana. Desainnya juga elegan!"</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Promo Countdown -->
-        <section class="mb-12">
-            <div class="countdown-box text-white p-6 text-center">
-                <h3 class="text-xl font-bold mb-2">PROMO SPESIAL HARI INI!</h3>
-                <p class="mb-4">Dapatkan Diskon Spesial Untuk Hari Ini Saja, Harga Akan Kembali Normal Setelah:</p>
-                <div class="flex justify-center space-x-4 mb-4">
-                    <div class="bg-white text-blue-900 rounded p-2 w-16">
-                        <div class="text-2xl font-bold" id="hours">12</div>
-                        <div class="text-xs">Jam</div>
-                    </div>
-                    <div class="bg-white text-blue-900 rounded p-2 w-16">
-                        <div class="text-2xl font-bold" id="minutes">45</div>
-                        <div class="text-xs">Menit</div>
-                    </div>
-                    <div class="bg-white text-blue-900 rounded p-2 w-16">
-                        <div class="text-2xl font-bold" id="seconds">30</div>
-                        <div class="text-xs">Detik</div>
-                    </div>
-                </div>
-                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
-                    <div class="text-3xl font-bold line-through">Rp225.000</div>
-                    <div class="text-4xl font-bold">Rp165.000</div>
-                    <div class="bg-red-500 px-4 py-1 rounded-full font-bold">Anda Hemat Rp60.000!</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Order Notes -->
-        <section class="mb-8 bg-blue-50 p-6 rounded-lg">
-            <h3 class="font-bold text-blue-900 mb-3">Catatan Penting:</h3>
-            <ul class="list-disc pl-5 space-y-2 text-gray-700">
-                <li>Pengiriman 2 - 4 Hari Setelah Pemesanan</li>
-                <li>Mohon Isi Alamat Dengan Lengkap</li>
-                <li>100% Product Original</li>
-            </ul>
-        </section>
-
-        <!-- Order Section -->
-        <section class="mb-16">
-            <div class="bg-white rounded-xl shadow-xl overflow-hidden">
-                <!-- Promo Banner -->
-                <div class="relative">
-                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98s-lw3rzc6p1ba378.webp" alt="Promo Diskon" class="w-full">
-                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
-                        <h3 class="text-white text-xl font-bold">GRATIS ONGKIR!</h3>
-                        <p class="text-white text-sm">Untuk pembelian hari ini saja</p>
-                    </div>
-                </div>
-                
-                <!-- Order Form -->
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-6 text-center text-blue-900">FORM PEMESANAN</h3>
                     
-                    <!-- Embedded Order Form -->
-                    <div class="bg-gray-100 p-4 rounded-lg mb-6">
-                        <form class="space-y-4">
-                            <div>
-                                <label class="block text-gray-700 mb-2">Nama Lengkap</label>
-                                <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Masukkan nama lengkap">
-                            </div>
-                            <div>
-                                <label class="block text-gray-700 mb-2">Nomor WhatsApp</label>
-                                <input type="tel" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Contoh: 081234567890">
-                            </div>
-                            <div>
-                                <label class="block text-gray-700 mb-2">Alamat Lengkap</label>
-                                <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" rows="3" placeholder="Masukkan alamat lengkap termasuk kecamatan dan kode pos"></textarea>
-                            </div>
-                            <div>
-                                <label class="block text-gray-700 mb-2">Pilihan Warna</label>
-                                <select class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                                    <option>Hitam</option>
-                                    <option>Biru Navy</option>
-                                    <option>Merah Maroon</option>
-                                    <option>Abu-abu</option>
-                                    <option>Pink</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label class="block text-gray-700 mb-2">Jumlah Pesanan</label>
-                                <input type="number" min="1" value="1" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                            </div>
-                            <div class="pt-4">
-                                <button type="submit" class="w-full premium-bg text-white py-3 px-6 rounded-lg font-bold hover:bg-blue-700 transition duration-300">
-                                    <i class="fas fa-shopping-cart mr-2"></i> PESAN SEKARANG
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                    
-                    <div class="text-center text-sm text-gray-500">
-                        <p><i class="fas fa-lock mr-2"></i> Data Anda aman dan tidak akan disalahgunakan</p>
+                    <div class="md:w-1/2 p-8 bg-gray-50">
+                        <h3 class="text-2xl font-bold mb-6">Form Pemesanan</h3>
+                        
+                        <!-- OrderOnline Embed Code - v8.0.4 -->
+                        <div class="ooef">
+                            <form class="orderonline-embed-form" data-username="rosa" data-product-slug="tas-traveling-original" data-product-id="66c727ecc0c43332b8090a88" id="oo-embed-form-tas-traveling-original-538" data-origin="orderonline">
+                                <div class="ooef-loader">
+                                    <style>
+                                        .ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}
+                                        @keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}
+                                        @-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}
+                                        .ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}
+                                        .ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}
+                                        .ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}
+                                        @-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}
+                                        @keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}
+                                    </style>
+                                    <div aria-live="polite" role="status">
+                                        <div>Loading...</div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <script>
+                            if (typeof xLogError != 'function') {
+                                var xLogError = function (error) {
+                                    var req = new XMLHttpRequest();
+                                    var payload = JSON.stringify({
+                                        url: document.location.href,
+                                        line: error.line,
+                                        stack: error.stack
+                                    });
+                                    var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                                    req.open('POST', 'https://api.orderonline.id/log', true);
+                                    req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                                    req.send(params);
+                                };
+                            }
+                            try {
+                                if (typeof xEmbedScript != 'function') {
+                                    var xEmbedScript = function () {
+                                        !function(w, d, e, v, id, t, s) {
+                                            if (d.getElementById(id)) return;
+                                            t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                            s = d.getElementsByTagName(e)[0];
+                                            s.parentNode.insertBefore(t, s);
+                                        }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                                    };
+                                }
+                                if (typeof xEmbedInit != 'function') {
+                                    var xEmbedInit = function (w, n) {
+                                        if (w.ooe) return;
+                                        n = w.ooe = function() {
+                                            n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                                        };
+                                        if (!w._ooe) w._ooe = n;
+                                        n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                                    };
+                                }
+                                xEmbedInit(window);
+                                ooe('setup', 'redirect', 'https://rosa.orderonline.id');
+                                ooe('init', '5f17ee268dcbdb1b55498d78', '66c727ecc0c43332b8090a88', '66c727ecc0c43332b8090a89', 'oo-embed-form-tas-traveling-original-538', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false});
+                                if (!window.jQuery) {
+                                    !function(w, d, e, v, id, t, s) {
+                                        if (d.getElementById(id)) return;
+                                        t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                        t.addEventListener('load', xEmbedScript);
+                                        s = d.getElementsByTagName(e)[0];
+                                        s.parentNode.insertBefore(t, s);
+                                    }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+                                } else {
+                                    xEmbedScript();
+                                }
+                            } catch (e) {
+                                xLogError(e);
+                                throw e;
+                            }
+                        </script>
+                        <!-- End OrderOnline Embed Code -->
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="premium-bg text-white py-8">
+    <footer class="premium-gradient text-white py-8">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">LUXEBAG</h3>
-                    <p>Tas kosmetik premium dengan kualitas terbaik dan harga terjangkau.</p>
+                    <h3 class="text-xl font-bold mb-4">COSMETIC BAG</h3>
+                    <p class="text-blue-100">Produk tas premium dengan kualitas terbaik untuk kebutuhan sehari-hari Anda.</p>
                 </div>
+                
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Kontak Kami</h3>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Jam Operasional</h3>
-                    <p>Senin - Jumat: 08.00 - 17.00 WIB</p>
-                    <p>Sabtu: 09.00 - 15.00 WIB</p>
+                    <h3 class="text-xl font-bold mb-4">Follow Kami</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-blue-200 transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-blue-200 transition"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-blue-200 transition"><i class="fab fa-tiktok"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="border-t border-blue-400 mt-8 pt-6 text-center">
+            
+            <div class="border-t border-blue-400 mt-8 pt-8 text-center text-blue-100">
+                <p>&copy; 2023 COSMETIC BAG. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Countdown Timer
+        // Countdown timer
         function updateCountdown() {
             const now = new Date();
-            const endOfDay = new Date();
-            endOfDay.setHours(23, 59, 59, 0);
+            const midnight = new Date();
+            midnight.setHours(24, 0, 0, 0);
             
-            const diff = endOfDay - now;
+            const diff = midnight - now;
             
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const hours = Math.floor(diff / (1000 * 60 * 60));
             const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((diff % (1000 * 60)) / 1000);
             
-            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            document.getElementById('countdown-hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('countdown-minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('countdown-seconds').textContent = seconds.toString().padStart(2, '0');
         }
         
         setInterval(updateCountdown, 1000);
         updateCountdown();
         
-        // Color Variant Selection
+        // Color variant selection
         const colorVariants = document.querySelectorAll('.color-variant');
         colorVariants.forEach(variant => {
             variant.addEventListener('click', () => {
